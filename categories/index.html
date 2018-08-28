@@ -14,7 +14,18 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<!--
+ color ：线条颜色, 默认: '0,0,0'；三个数字分别为(R,G,B)
+ opacity: 线条透明度（0~1）, 默认: 0.5
+ count: 线条的总数量, 默认: 150
+ zIndex: 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1 
+--> 
+
+<script type="text/javascript"
+color="0,0,255" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -84,7 +95,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '6.4.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -117,8 +128,6 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="#创建categories子目录">
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="sunshine" type="application/atom+xml" />
@@ -228,14 +237,6 @@
         
         
           
-          <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />Über</a>
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
@@ -264,27 +265,36 @@
     <a href="/schedule/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />Schedule</a>
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-sitemap">
-    <a href="/sitemap.xml" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />Sitemap</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-commonweal">
-    <a href="/404/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />Commonweal 404</a>
-  </li>
 
       
       
     </ul>
   
+
+  
+    
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
 
   
 
@@ -306,40 +316,6 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-            
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
@@ -501,7 +477,7 @@
 
 
 
-  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Pisces</a> v6.4.0</div>
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.4.0</div>
 
 
 
@@ -554,6 +530,8 @@
 
 
 
+  
+
 
 
 
@@ -581,6 +559,11 @@
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
 
   
 
@@ -593,13 +576,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
-
-
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
